@@ -4,7 +4,7 @@ import google.generativeai as genai
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
 def generate_video_idea():
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-1.5-flash-latest")
     response = model.generate_content("Give me a trendy faceless YouTube channel idea.")
     print("Video Idea:", response.text)
 
