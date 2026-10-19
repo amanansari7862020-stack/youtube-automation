@@ -1,3 +1,4 @@
+import google.generativeai as genai
 # Configure Gemini API Key from GitHub Secrets
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
