@@ -8,5 +8,5 @@ def generate_video_idea():
     response = model.generate_content("Give me a trendy faceless YouTube channel idea.")
     print("Video Idea:", response.text)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     generate_video_idea()
